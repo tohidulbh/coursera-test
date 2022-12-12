@@ -6,3 +6,8 @@ $OUTPUT_FILE = ($DOWNLOAD_DIR+$FILE)
 (new-object System.Net.WebClient).DownloadFile($URL, $OUTPUT_FILE)
 cmd.exe /c $OUTPUT_FILE /S
 Get-Package -Name *vlc*
+
+
+
+cmd.exe /c "C:\Program Files\GIMP 2\uninst\unins000.exe" /VERYSILENT /NORESTART
+Get-Package
